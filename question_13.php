@@ -2,8 +2,7 @@
 // Récupération des fonctions
 require_once("config.php");
 require_once("functions.php");
-$acteurs = array_linearize(get_all_items("Acteurs"));
-?>
+$pizza=like_sup(); ?>
 
 <!DOCTYPE>
 <html>
@@ -15,13 +14,11 @@ $acteurs = array_linearize(get_all_items("Acteurs"));
 </head>
 <body>
   <div class="col-md-12">
-    <h1>Question 3</h1>
+    <h1>Question 13</h1>
     <hr />
     <div class="container">
       <ul class="row">
-        <?php foreach($acteurs as $acteur): ?>
-          <li class="col-md-12"><?php echo $acteur ?></li>
-        <?php endforeach; ?>
+        <li class="col-md-12"><?php echo $pizza ?></li>
       </ul>
     </div>
   </div>
