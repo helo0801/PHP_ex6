@@ -2,7 +2,13 @@
   require_once("config.php");
   require_once("functions.php");
   
-    $privees = array_unique(array_linearize(get_all_items("Private[true]")));
+    $privees = NULL;
+
+    $films = films_all;
+    foreach ($films as $film) {
+      if($film[Private] = true);
+      $film[Private] = $privees;
+    }
     echo $privees;
 ?>
 
@@ -21,7 +27,7 @@
     <div class="container">
       <ul class="row">
         <?php foreach($privees as $privee): ?>
-          <li class="col-md-12"><?php echo $privee ?></li>
+          <li class="col-md-12"><?php echo $privees ?></li>
         <?php endforeach; ?>
       </ul>
     </div>
