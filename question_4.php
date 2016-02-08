@@ -1,8 +1,9 @@
 <?php
-// Récupération des fonctions
-require_once("config.php");
-require_once("functions.php");
-$annees = array_unique(get_all_items("Année"));
+  require_once("config.php");
+  require_once("functions.php");
+
+    $annees = array_unique(get_all_items("Année"));
+    echo $annees;
 ?>
 
 <!DOCTYPE>

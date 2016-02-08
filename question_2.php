@@ -1,14 +1,14 @@
 <?php
-// Récupération des fonctions
 require_once("config.php");
 require_once("functions.php");
-// Déclaration des valeurss
-$id = null;
-// Récupération des valeurs
-if (isset($_GET["id"])) {
-  $id = $_GET["id"];
+
+  $id = null;
+
+  if (isset($_GET["id"])) {
+    $id = $_GET["id"];
 }
 $film = get_film_by_id($id);
+echo $film;
 ?>
 
 <!DOCTYPE>

@@ -2,8 +2,8 @@
   require_once("config.php");
   require_once("functions.php");
   
-    $genres = film_genre("Drame");
-    echo $genres;
+    $privees = array_unique(array_linearize(get_all_items("Private[true]")));
+    echo $privees;
 ?>
 
 <!DOCTYPE>
@@ -16,12 +16,12 @@
 </head>
 <body>
   <div class="col-md-12">
-    <h1>Question 7</h1>
+    <h1>Question 5</h1>
     <hr />
     <div class="container">
       <ul class="row">
-        <?php foreach($genres as $genre): ?>
-          <li class="col-md-12"><?php echo $genre ?></li>
+        <?php foreach($privees as $privee): ?>
+          <li class="col-md-12"><?php echo $privee ?></li>
         <?php endforeach; ?>
       </ul>
     </div>

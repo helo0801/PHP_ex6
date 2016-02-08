@@ -1,14 +1,16 @@
 <?php
-// Récupération des fonctions
-require_once("config.php");
-require_once("functions.php");
-$annee = null;
-$films = films_all();
-foreach ($films as $film) {
-  if ($film["Nom"] == "La ligne verte") {
-    $annee = $film["Année"];
-  }
-}
+  require_once("config.php");
+  require_once("functions.php");
+
+    $annee = null;
+
+    $films = films_all();
+      foreach ($films as $film) {
+        if ($film["Nom"] == "La ligne verte") {
+        $annee = $film["Année"];
+       }
+    }
+    echo $annee;
 ?>
 
 <!DOCTYPE>

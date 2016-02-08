@@ -1,8 +1,9 @@
 <?php
-// Récupération des fonctions
-require_once("config.php");
-require_once("functions.php");
-$films = films_all();
+  require_once("config.php");
+  require_once("functions.php");
+
+    $films = films_all();
+    echo $films;
 ?>
 
 <!DOCTYPE>

@@ -1,14 +1,16 @@
 <?php
-// Récupération des fonctions
-require_once("config.php");
-require_once("functions.php");
-$realisateur = null;
-$films = films_all();
-foreach ($films as $film) {
-  if ($film["Nom"] == "Django Unchained") {
-    $realisateur = $film["Réalisateur"];
+  require_once("config.php");
+  require_once("functions.php");
+
+    $realisateur = null;
+    
+    $films = films_all();
+      foreach ($films as $film) {
+        if ($film["Nom"] == "Django Unchained") {
+          $realisateur = $film["Réalisateur"];
   }
 }
+echo $realisateur;
 ?>
 
 <!DOCTYPE>
